@@ -1,6 +1,6 @@
 #PingBot
 #Made by Chili
-#Version 1.0 (Full Version)
+#Version 2.0 (Final Release)
 #Date 2020-08-09
 
 from pynput.keyboard import Key, Controller
@@ -39,6 +39,7 @@ if '-h' in sys.argv:
 
 if '-u' in sys.argv:
     username = input("Enter the username: ")
+    pinged1 = int(input("How many pings?: "))
 
     print("[+] Made by Chili")
     print("")
@@ -52,7 +53,7 @@ if '-u' in sys.argv:
     time.sleep(1)
     print("[+] Script Starting in 1 second")   
 
-    for x in range(16):
+    for x in range(pinged1):
          keyboard.type("@" + username)
          keyboard.press(Key.enter)
          keyboard.release(Key.enter)
@@ -62,6 +63,7 @@ if '-u' in sys.argv:
 
 if '-e' in sys.argv:
 
+    pinged2 = int(input("How many pings?: "))
     e = ("everyone")
     print("[+] Made by Chili")
     print("")
@@ -75,7 +77,7 @@ if '-e' in sys.argv:
     time.sleep(1)
     print("[+] Script Starting in 1 second")
 
-    for x in range(16):
+    for x in range(pinged2):
          keyboard.type("@" + e)
          keyboard.press(Key.enter)
          keyboard.release(Key.enter)
