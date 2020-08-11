@@ -41,8 +41,8 @@ if '-h' in sys.argv:
     print(helpmenu)
 
 if '-u' in sys.argv:
-    username = input("Enter the username: ")
-    pinged1 = int(input("How many pings?: "))
+    username = input("[+] Enter the username: ")
+    pinged1 = int(input("[+] How many pings?: "))
 
     print("[+] Made by Chili")
     print("")
@@ -66,7 +66,7 @@ if '-u' in sys.argv:
 
 if '-e' in sys.argv:
 
-    pinged2 = int(input("How many pings?: "))
+    pinged2 = int(input("[+] How many pings?: "))
     e = ("everyone")
     print("[+] Made by Chili")
     print("")
@@ -88,8 +88,8 @@ if '-e' in sys.argv:
          keyboard.release(Key.enter)
 
 if '--custom' in sys.argv: 
-   custom = input('Enter the word to get spammed: ')
-   pinged3 = int(input('How many times should the word/sentence get spammed?: '))
+   custom = input('[+] Enter the word to get spammed: ')
+   pinged3 = int(input('[+] How many times should the word/sentence get spammed?: '))
    
    print("[+] Made by Chili")
    print("")
@@ -112,8 +112,8 @@ if '--custom' in sys.argv:
        keyboard.release(Key.enter)
 
 if '-c' in sys.argv: 
-   custom = input('Enter the word to get spammed: ')
-   pinged3 = int(input('How many times should the word/sentence get spammed?: '))
+   custom = input('[+] Enter the word to get spammed: ')
+   pinged3 = int(input('[+] How many times should the word/sentence get spammed?: '))
    
    print("[+] Made by Chili")
    print("")
